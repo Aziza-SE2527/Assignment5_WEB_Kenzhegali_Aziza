@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="#part1">Part 1:Intro</a>
+        <a href="#part2">Part 2:DOM</a>
+        <a href="#part3">Part 3:Events</a>
+        <a href="#part4">Part 4:To-Do</a>
+    </nav>
+
+    <div class="container">
+        <section id="part1">
+            <h2>Part 1. Introduction</h2>
+            <p>Task 0 and Task 1: Check your browser console </p>
+        </section>
+
+        <section id="part2">
+            <h2>Part 2. DOM Manipulation</h2>
+            
+            <div class="task-box">
+                <h3>Task 2. Changing Content</h3>
+                <p id="text-to-change">Original text brownieee</p>
+                <button id="btn-text">Change Text</button>
+            </div>
+
+            <div class="task-box">
+                <h3>Task 3. Changing Styles</h3>
+                <div id="style-box" class="box">Box</div>
+                <button id="btn-color">Change color</button>
+                <button id="btn-size">Change font size</button>
+            </div>
+
+            <div class="task-box">
+                <h3>Task 4. Creating and removing elements</h3>
+                <ul id="list">
+                    <li>Item 1</li>
+                </ul>
+                <button id="btn-add">Add item</button>
+                <button id="btn-remove">Remove item</button>
+            </div>
+        </section>
+
+        <section id="part3">
+            <h2>Part 3.Events</h2>
+
+            <div class="task-box">
+                <h3>Task 5.Mouse events</h3>
+                <div id="hover-box" class="box">Hover me</div>
+            </div>
+
+            <div class="task-box">
+                <h3>Task 6.Keyboard events</h3>
+                <input type="text" id="live-input" placeholder="Type here...">
+                <p>Output: <span id="live-output"></span></p>
+            </div>
+
+            <div class="task-box">
+                <h3>Task 7. Calculator</h3>
+                <input type="number" id="num1" placeholder="Num 1">
+                <select id="operator">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+                <input type="number" id="num2" placeholder="Num 2">
+                <button id="btn-calc">Calculate</button>
+                <p>Result: <span id="calc-result">0</span></p>
+            </div>
+        </section>
+
+        <section id="part4">
+            <h2>Part 4. To-Do list</h2>
+            <div class="todo-app">
+                <div class="todo-inputs">
+                    <h3>Add Task</h3>
+                    <input type="text" id="task-title" placeholder="Title">
+                    <textarea id="task-desc" placeholder="Description"></textarea>
+                    <button id="btn-add-task">Add task</button>
+                </div>
+                
+                <div class="todo-list-area">
+                    <h3>Tasks</h3>
+                    <div id="tasks-container"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
